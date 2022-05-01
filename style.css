@@ -1,7 +1,7 @@
 body {
     background-color: #FEE2C5;
-    font-family: 'Merriweather', serif;
-    margin: 0;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -29,8 +29,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) minmax(auto, 200px);
     align-items: center;
-    background-color: #7FB5FF;
     font-size: 1.2em;
+    background-color: #7FB5FF;
 }
 
 .navbar {
@@ -107,30 +107,30 @@ ul {
 
 .about__project {
     display: grid;
-    grid-template: minmax(auto, 100px) 1fr / 1fr minmax(auto, 1200px) 1fr;
+    grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
 }
 
 .about__project__header {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    justify-self: center;
 }
 
 .about__project__info {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 30px;
 }
 
 .project__info__team {
     display: grid;
-    grid-template: 200px / 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr;
 }
-
-.team__info {}
 
 .circle__image {
     position: relative;
-    margin-bottom: 30px;
-    margin-right: 30px;
+    padding: 0 0 95% 0;
+    margin: 0 0 30px 0;
 }
 
 .circle__image img {
@@ -142,12 +142,20 @@ ul {
     object-fit: cover;
 }
 
+.about__project__text {
+    margin-left: 30px;
+    font-size: 1.2em;
+    line-height: 40px;
+    font-weight: 500;
+}
 
 /* ------------------------------------------------------------------------ */
 
 .main__courses__info {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+    font-size: 1.2em;
+    line-height: 40px;
 }
 
 .main__header,
@@ -197,6 +205,7 @@ ul {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
+    margin: 0px;
 }
 
 .footer__copy {
