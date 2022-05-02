@@ -406,7 +406,6 @@ input[type=submit] {
     }
 
     .navbar {
-        z-index: 10;
         display: none;
     }
 
